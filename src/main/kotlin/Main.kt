@@ -36,3 +36,5 @@ fun runningSum(nums: IntArray): IntArray {
     }
     return runSum
 }
+
+fun defangIPaddr(address: String): String = address.replace(".", "[.]")
