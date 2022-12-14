@@ -38,3 +38,12 @@ fun runningSum(nums: IntArray): IntArray {
 }
 
 fun defangIPaddr(address: String): String = address.replace(".", "[.]")
+
+fun finalValueAfterOperations(operations: Array<String>): Int {
+    var x = 0
+    for (i in 0..operations.size - 1) {
+        if (operations[i].equals("++X") || operations[i].equals("X++")) x++
+        else if (operations[i].equals("--X") || operations[i].equals("X--")) x--
+    }
+    return x
+}
