@@ -1,8 +1,5 @@
 fun main(args: Array<String>) {
-    concatenation(intArrayOf(10, 1, 2, 3, 5, 6, 7)).forEach {
-        print(it)
-    }
-    buildArray(intArrayOf(0, 2, 1, 5, 3, 4)).forEach { print(" " + it) }
+    println(smallestEvenMultiple(13))
 }
 
 fun concatenation(nums: IntArray): IntArray {
@@ -47,3 +44,6 @@ fun finalValueAfterOperations(operations: Array<String>): Int {
     }
     return x
 }
+
+fun smallestEvenMultiple(n: Int): Int = if (n % 2 == 0) n
+else n * 2
